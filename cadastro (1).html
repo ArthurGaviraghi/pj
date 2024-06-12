@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="ALLfitness.js"></script>
+    <style>
+
+*{
+    margin: 0;
+    
+}
+body{
+    background-color: #000000;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size:200%;
+    font-style: italic;
+    padding: 20px;
+  
+   
+    
+    background: rgb(0, 0, 0);
+    color: #04ca6e;
+ 
+    
+}h1{
+    margin-left: 7%;
+}
+header button{
+    border-color: #00ff88;
+    background-color:#1a3327;
+    color:#ffffff;
+
+    font-size:60%;
+
+    padding: 5%;
+    width:150px;
+    margin: 2px;
+    border-radius: 5%;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+   
+   
+}
+main{
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 5%;
+    height: 100%;
+
+    background-color:#000000;
+    border-color: #00ff88;
+}
+        .container {
+            text-align: center;
+            color: aliceblue;
+            position: absolute;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        
+            border: 0px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(21, 66, 40, 0.2);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            border-color: #00ff88;
+            color: #1a3327;
+        }
+
+        button{
+            background-color: #45a049;
+            color: white;
+            cursor: pointer;
+            padding: 3%;
+            width: 100%;
+        }
+        footer{
+          background-color: rgb(0, 0, 0);
+          color: #ffffff;
+          padding: 15px;
+          display: flex;
+          justify-content: space-between;
+         align-items: center;
+         text-align: center;
+        
+        }
+        footer .avaliacao{
+            padding: 10px;
+            font-family:'Times New Roman', Times, serif;
+            font-style: italic;
+             font-size: 25px;
+          
+            
+        }#menssagem{
+            padding: 6.6px;
+            color: #015c31;
+            border-color:#015c31;
+        }
+        #envio{
+          background-color: #1a3327;
+            padding: 6.6px;
+            width: 100px;
+            border-color: #00ff88;
+        }.envio{
+            display: flex;
+            align-items: center;
+        }
+        img{
+         
+            background-color: #000000;
+           width: 70%;
+           height: 110%;
+        } 
+        hr{
+            border-color: #ffffff;
+        }
+    </style>
+    </head>
+    <body>
+        <nav></nav>
+        <header>
+            <h1>ALLfitness.com </h1>
+            <div>
+                <button onclick="pagLogin()">Login</button>
+            </div>
+        </header>
+        
+        <nav>
+        <main>
+    <div class="container">
+        <h2>Área de Cadastro</h2>
+        <article>
+            <label for="username">Usuário:</label>
+            <input type="text" id="nome" name="name" placeholder="Digite seu usuário" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Digite sua idade " required>
+            <button onclick="cadastro()">Cadastrar</button>
+        </article><br>
+        <h4 id="resposta"></h4><br>
+        <h4 id="resposta1"></h4>
+    </div>
+</main>
+<img src="img (1)/img.JPG" >
+</nav>
+<hr >
+<footer>
+<div class="avaliacao">
+       <h3>Avalie nosso site:</h3>
+</div>
+<div class="envio">
+   <textarea name="menssagem" id="menssagem" cols="65" rows="1" placeholder="Digie sua opinião sobre o site" required></textarea>
+   <button id="envio">Enviar</button>
+</div>
+
+</footer>
+    </body>
+    </html>
